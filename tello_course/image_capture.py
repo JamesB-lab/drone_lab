@@ -4,7 +4,7 @@ import cv2
 
 me = tello.Tello()
 me.connect()
-print(me.get_battery())
+print(f"battery level: {me.get_battery()} %")
 
 me.streamon()  # gives all the stream frame by frame for processing
 
