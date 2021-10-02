@@ -50,4 +50,5 @@ def get_keyboard_input():
 while True:
     vals = get_keyboard_input()
     me.send_rc_control(vals[0], vals[1], vals[2], vals[3])
+    ic.show_frame(me)
     sleep(0.05)
